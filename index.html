@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Assignment</h1>
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1 & 2: Interactive Elements -->
+    <section>
+      <h2>FAQ Section</h2>
+      <div class="faq">
+        <button class="faq-question">What is JavaScript?</button>
+        <p class="faq-answer">JavaScript makes websites interactive!</p>
+      </div>
+      <div class="faq">
+        <button class="faq-question">What is DOM?</button>
+        <p class="faq-answer">The DOM represents your webpage as objects you can manipulate with JS.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Sign Up Form</h2>
+      <form id="signup-form">
+        <label>
+          Name:
+          <input type="text" id="name" />
+          <small class="error" id="name-error"></small>
+        </label>
+
+        <label>
+          Email:
+          <input type="text" id="email" />
+          <small class="error" id="email-error"></small>
+        </label>
+
+        <label>
+          Password:
+          <input type="password" id="password" />
+          <small class="error" id="password-error"></small>
+        </label>
+
+        <button type="submit">Submit</button>
+        <p id="form-success" class="success"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
